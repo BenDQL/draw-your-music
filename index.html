@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Draw your music!</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #1b1b1b;
+    }
+
+    button {
+      border: none;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #0a5d48;
+    }
+
+    .reset-button {
+      border-radius: 12px;
+      padding: 15px 32px;
+    }
+
+    .colorpan-button {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+    #yellow-pen {
+      background-color: rgb(231, 180, 117);
+    }
+
+    #white-pen {
+      background-color: rgb(238, 238, 228);
+    }
+
+    #tool-bar {
+      position: absolute;
+      bottom: 50px;
+      left: 20px;
+      width: 100%;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+    }
+  </style>
+  <script src="../p5.min.js"></script>
+  <script src="../addons/p5.sound.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main></main>
+  <div id="tool-bar">
+    <button type="button" class="reset-button" onclick="resetSketch()">Reset</button>
+    <button type="button" id="yellow-pen" class="colorpan-button" onclick="changePen('yellow')"></button>
+    <button type="button" id="white-pen" class="colorpan-button" onclick="changePen('white')"></button>
+  </div>
+</body>
+
+</html>
