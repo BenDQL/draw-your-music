@@ -14,7 +14,7 @@ function preload() {
     for (let i = 0; i < cells; i++) {
       sounds[key][i] = new Array(cells);
       for (let j = 0; j < cells; j++) {
-        let loadMusic = loadSound(`assets/${key}${i}${j}.mp3`);
+        let loadMusic = loadSound(`./assets/${key}${i}${j}.mp3`);
         sounds[key][i][j] = loadMusic;
       }
     }
